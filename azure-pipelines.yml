@@ -7,11 +7,11 @@ trigger:
 - main
 
 pool:
-  name: Azure Pipelines
+  name: ubuntu
   parralel: true
 
 steps:
-- script: echo Hello, world!
+- script: python3 main.py
   displayName: 'Run a one-line script'
 
 - script: |
