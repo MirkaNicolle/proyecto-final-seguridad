@@ -6,6 +6,11 @@
 trigger:
 - main
 
+pr:
+    branches:
+      include:
+        - prod/*
+        
 pool:
   name: Default
   parralel: true
@@ -34,5 +39,6 @@ steps:
     artifact: 'drop'
     publishLocation: 'pipeline'
   displayName: 'Publish Artifact'
+
 
 
